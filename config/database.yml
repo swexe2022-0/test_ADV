@@ -21,10 +21,10 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
+  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: test_ADV
   username: test_ADV_user
   password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
